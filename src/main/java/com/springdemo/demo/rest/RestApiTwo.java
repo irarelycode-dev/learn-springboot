@@ -38,24 +38,24 @@ public class RestApiTwo {
         return students.get(studentId);
     }
 
-    //add exception handler
-    @ExceptionHandler
-    public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException e){
-        StudentErrorResponse error=new StudentErrorResponse();
-        error.setStatus(404);
-        error.setMessage(e.getMessage());
-        error.setTimestamp(System.currentTimeMillis());
-        return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
-    }
-
-    //add exception handler to catch any type of exception
-    @ExceptionHandler
-    public ResponseEntity<StudentErrorResponse> handleAllException(Exception e){
-        StudentErrorResponse error=new StudentErrorResponse();
-        error.setStatus(HttpStatus.BAD_REQUEST.value());
-        error.setMessage(e.getMessage());
-        error.setTimestamp(System.currentTimeMillis());
-        return new ResponseEntity<>(error,HttpStatus.BAD_REQUEST);
-    }
+//    //add exception handler
+//    @ExceptionHandler
+//    public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException e){
+//        StudentErrorResponse error=new StudentErrorResponse();
+//        error.setStatus(404);
+//        error.setMessage(e.getMessage());
+//        error.setTimestamp(System.currentTimeMillis());
+//        return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
+//    }
+//
+//    //add exception handler to catch any type of exception
+//    @ExceptionHandler
+//    public ResponseEntity<StudentErrorResponse> handleAllException(Exception e){
+//        StudentErrorResponse error=new StudentErrorResponse();
+//        error.setStatus(HttpStatus.BAD_REQUEST.value());
+//        error.setMessage(e.getMessage());
+//        error.setTimestamp(System.currentTimeMillis());
+//        return new ResponseEntity<>(error,HttpStatus.BAD_REQUEST);
+//    }
 
 }
