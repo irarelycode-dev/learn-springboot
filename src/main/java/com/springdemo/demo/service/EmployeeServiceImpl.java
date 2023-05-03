@@ -2,6 +2,8 @@ package com.springdemo.demo.service;
 
 import com.springdemo.demo.entity.Employee;
 import com.springdemo.demo.jpa.dao.EmployeeDao;
+import com.springdemo.demo.jpa.dao.EmployeeImpl;
+import com.springdemo.demo.repositories.EmployeeRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,7 @@ import java.util.*;
 public class EmployeeServiceImpl implements EmployeeService{
 
     private EmployeeDao employeeDao;
+    private EmployeeRepository employeeRepository;
 
     @Override
     public Employee findById(int id) {
@@ -34,6 +37,13 @@ public class EmployeeServiceImpl implements EmployeeService{
     public EmployeeServiceImpl(EmployeeDao employeeDao){
         this.employeeDao=employeeDao;
     }
+
+//    @Autowired
+//    public EmployeeServiceImpl(EmployeeRepository employeeRepository){
+//        this.employeeRepository=employeeRepository;
+//    }
+
+    //remove @Transactional annotation since JPA handles it
 
     @Override
     public List<Employee> findAll(){
