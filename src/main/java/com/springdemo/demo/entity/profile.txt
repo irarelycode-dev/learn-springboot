@@ -1,0 +1,149 @@
+➲ Graduate computer science student @Université Concordia (Concordia university), Montreal, CA.
+ Expected graduation- fall 2023
+➲ I'm a software engineer with 3 years of experience in Indian e-commerce and EdTech based startups
+➲ Actively searching for SWE/SDE roles in banking,e-commerce and retail, product based MNCs and
+ startups anywhere in Canada.
+
+
+I'm proficient with -
+
+➲ Frontend - React, TypeScript, JavaScript, SCSS, CSS Selectors, Flex ,Material UI, bootstrap
+➲ Mobile - React Native
+➲ Backend - Node.js with Express.js framework (Both monolithic & microservices architecture), Nestjs with
+ Express.js framework (Both monolithic and microservices architecture), Spring MVC, Springboot
+➲ Webservices: REST, SOAP
+➲ APIs - GraphQL
+➲ Unit testing libraries - Jest, JUnit, Jasmine
+➲ Cloud - amazon web services, firebase, heroku
+➲ Database - MongoDB, MySQL, Postgres
+➲ Scripting - Python
+➲ Third party integrations - Google Maps, Okta, Stripe , Twilio, Google Firebase cloud functions, firestore,
+ cloud messaging
+➲ container and ochestration stacks: Docker,Docker Swarm,Kubernetes
+➲ CI/CD tools- Jenkins, Travis CI
+➲ Code quality maintenance - SonarQube, SonarLint
+➲ project management tools - Jira
+➲ Strong Programming Languages - JavaScript (ES6 and above), Java, Typescript, Golang
+➲ Strong version control system skills (git, github , gitlab ,aws code commit)
+➲ Design patterns, OOPs
+➲ Agile Scrum methodology
+
+Other tools I have some experience with -
+
+➲ Deployment - AWS (EC2, ECS, API gateway), Vercel, Netlify, Heroku
+➲ Web Server - Nginx, Apache Tomcat
+➲ Process Manager - PM2
+➲ Messaging - RabbitMQ, SQS, Redis
+➲ Containers - Docker
+➲ Container orchestration tools - Docker Swarm, Kubernetes
+___________________________________________________________________
+
+Product: Digi-Scheduler v2
+
+➲ Contributed to all phases of the product development life cycle, including system design, implementation and internal releases in a fast paced Agile environment with continuous integration and deployment (CI/CD).
+
+➲ Completed a POC on multi-tenant architecture and helped migrating entire backend server to a multi-tenant architectural design wherein multiple instances of an application work in shared environment, integrating each tenant physically but separating them logically.
+
+➲ Implemented architectural design patterns such as redis pub-sub model, multi-tenant SaaS architecture to logically separate each of our clients and onboard them within few seconds.
+
+➲ Design and code scalable an RESTAPIs APIs in nodejs environment with unit testing libraries such as jest.
+
+➲ Document the APIs as postman collections and involved in the API testing with testing team.
+
+➲ Used aws services like S3, Route53, Servless,SQS using SDKs for javascript
+
+➲ Designed and developed frontend dashboards in reactjs to monitor each client's usage and statistics.
+
+ ➲ Carried out unit testing using jest for the every component in the dashboard with a test coverage of 95%
+
+➲ Developed scripts to migrate MongoDB collections to each tenant's database when onboarded.
+
+➲ Track and bug fix live and staging issues using tools like JIRA
+
+➲ Led a team of 3 backend developers to develop worker services and implement bull queues in nodejs.
+
+➲ Led a team of 2 frontend developers to migrate few pages of SPA UI elements to material UI specific elements.
+
+Product: Digi-Assess
+
+➲ Code and unit test scalable REST apis
+➲ Setup sockets from scratch in backend.
+➲ Debug and resolved production issues.
+➲ Setup custom mailer service using bull queues.Product: Digi-Scheduler v2 ➲ Contributed
+
+________________________________________________________________________________________
+
+* Designing and coding scalable GraphQL and REST APIs in nestjs framework, in a microservice environment along with unit testing each module using jest library.
+* Worked on coupons, offers and customer support modules, transforming UX design into scalable reactjs code using nx.
+* Automated client on-boarding in a SaaS architecture using netlify's Open APIs and aws's route53 service.
+* Completed a POC on graphql client's network caching and implemented the same, thereby reducing unnecessary network calls.
+* Trained frontend developers on libraries and frameworks such as GraphQL, CoreUI, MaterialUI, Nextjs.
+* Single handedly migrated entire front-end code template from CoreUI 2 to CoreUI3 for store dashboard.
+* Documented apis as postman collections and coordinated with QA team for api testing .
+* Performed code reviews and was actively involved in brainstorming sessions.
+* Performed basic devops operations when needed.* Designing and coding scalable GraphQL and REST APIs in nestjs framework, in a microservice environment along with unit testing each module using jest library. * Worked on coupons, offers and customer support modules, transforming UX design into scalable reactjs code using nx. * Automated client on-boarding in a SaaS architecture using netlify's Open APIs and aws's route53 service. * Completed a POC on graphql client's network caching and implemented the same, thereby reducing unnecessary network calls. * Trained frontend developers on libraries and frameworks such as GraphQL, CoreUI, MaterialUI, Nextjs. * Single handedly migrated entire front-end code template from CoreUI 2 to CoreUI3 for store dashboard. * Documented apis as postman collections and coordinated with QA team for api testing . * Performed code reviews and was actively involved in brainstorming sessions. * Performed basic devops operations when needed.
+Skills: Optimizing Performance · Web Applications · Design Patterns · Databases · NestJS · MongoDB · Amazon Web Services (AWS) · Agile Methodologies · Software Development · React.js
+
+
+
+_______________________________________________________________________________________________
+
+
+https://university.mongodb.com/course_completion/04113fb1-90a1-42a2-9bc6-8fa558af1ec6?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing
+https://university.mongodb.com/course_completion/04113fb1-90a1-42a2-9bc6-8fa558af1ec6?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing
+https://university.mongodb.com/course_completion/e01540ef-d671-4b84-a967-fe677c716e88?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing
+https://www.hackerrank.com/certificates/58fa1dafe6be
+https://www.hackerrank.com/certificates/e1e783380063
+https://www.hackerrank.com/certificates/2b02aa308f04
+https://www.hackerrank.com/certificates/5c6b54d674d3
+___________________________________________________________________________________________________
+
+
+Comparative Study of CNN ArchitecturesComparative Study of CNN Architectures
+Sep 2022 - Dec 2022Sep 2022 - Dec 2022
+
+Associated with Concordia UniversityAssociated with Concordia University
+Comparative study of three different CNN architectures (ResNet,VGG11,AlexNet) for three different traffic sign boards datasets with varying number of classes using image processing and computer vision techniques. Performed hyperparameter tuning to conclude a detailed analysis of the architectures.
+
+
+
+________________________________________________________________________
+
+Cloud based social interaction platform with restrictions using sentimental analysis and NLP techniquesCloud based social interaction platform with restrictions using sentimental analysis and NLP techniques
+Jun 2019 - Nov 2019Jun 2019 - Nov 2019
+
+Associated with Vel Tech Technical UniversityAssociated with Vel Tech Technical University
+An interaction portal,more like Quora or stackoverflow , which allows multiple users to interact with each other by tagging the concerned user,that can viewed by all the other users whoever follows that concerned user.There exists no privacy and this system can be used in educational and governmental organizations,thus increasing the transparency among the users. To restrict the users from commenting vulgar and to maintain the community guidelines,users' comments are filtered dynamically using sentimental analysis and natural language processing algorithms(NLP).Following are the technologies used:
+Flask for backend
+HTML5,CSS3,BS4 for frontend
+sqlite for Database
+Natural language toolkit(NLTK,python)
+Heroku cloud for deploying
+_____________________________
+
+National Mathematics Olympiad-level 2National Mathematics Olympiad-level 2
+Issued by All India Schools Mathematics Teachers Association · Nov 2013Issued by All India Schools Mathematics Teachers Association · Nov 2013
+Associated with Atomic Energy Central SchoolAssociated with Atomic Energy Central School
+Cleared Level-2 with an overall percent of 86%...Cleared Level-2 with an overall percent of 86%...
+National Mathematics Olympiad-prelimsNational Mathematics Olympiad-prelims
+Issued by All India Schools Mathematics Teachers Association · Jun 2013Issued by All India Schools Mathematics Teachers Association · Jun 2013
+Associated with Atomic Energy Central SchoolAssociated with Atomic Energy Central School
+Cleared prelims with an overall percent of 75.2%...
+
+________________________________
+
+
+Vignesh, a highly skilled software engineer that I had the pleasure of working with in the past.
+
+Vignesh is a smart worker and his expertise in modern stack is truly impressive. He has an extensive knowledge of the latest technologies, tools and frameworks that are commonly used in software development. He consistently demonstrates his ability to tackle complex problems with ease and has a great talent for finding innovative solutions to challenging issues.
+
+I had the opportunity to work closely with Vignesh when we were tasked with converting a SaaS application from Node. Vignesh was a key member of the team and was instrumental in ensuring that the project was delivered on time and within budget. He was dedicated to ensuring that the project was a success and was always willing to go the extra mile to make sure that everything was done right.
+
+In addition to his technical skills, Vignesh is a great team player with excellent communication skills. He is always willing to share his knowledge with others and is a great mentor to his peers. He is highly motivated and is always looking for ways to improve his skills and learn more.
+
+Overall, I highly recommend Vignesh for any software engineering position. He is a smart worker with excellent skills in modern stack and is truly dedicated to his work. He would be a valuable asset to any team.
+
+
+
+
+
