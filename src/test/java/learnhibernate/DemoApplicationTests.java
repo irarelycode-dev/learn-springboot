@@ -41,7 +41,7 @@ public class DemoApplicationTests {
     @Test
     void testRollback(){
         long count=bookRepository.count();
-        assertThat(count).isGreaterThan(1);
+        assertThat(count).isGreaterThan(2);
     }
 
 }
