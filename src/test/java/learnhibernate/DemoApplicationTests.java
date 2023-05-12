@@ -34,7 +34,7 @@ public class DemoApplicationTests {
     @Test
     void contextLoads(){
         long countBefore=bookRepository.count();
-        bookRepository.save(new Book("My book","12345","Self"));
+        bookRepository.save(new Book("My book","12345","Self", 123L));
         long count=bookRepository.count();
         assertThat(countBefore).isLessThan(count);
     }

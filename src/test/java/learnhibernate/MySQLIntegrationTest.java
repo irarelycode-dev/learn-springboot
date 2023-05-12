@@ -24,7 +24,7 @@ public class MySQLIntegrationTest {
         long countBefore=bookRepository.count();
         assertThat(countBefore).isEqualTo(10);
         System.out.println("*****************count before**************:"+countBefore);
-        Book tmp=new Book("Life of pie","12345","Pablo");
+        Book tmp=new Book("Life of pie","12345","Pablo",223L);
         bookRepository.save(tmp);
         long countAfter=bookRepository.count();
         System.out.println("*****************count after**************:"+countAfter);
