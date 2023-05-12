@@ -1,5 +1,6 @@
 package learnhibernate;
 
+import java.util.*;
 import learnhibernate.domain.Book;
 import learnhibernate.repositories.BookRepository;
 import org.junit.jupiter.api.MethodOrderer;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.annotation.Rollback;
+import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -24,7 +26,7 @@ public class DemoApplicationTests {
     @Test
     void bookTestRepository(){
         long count=bookRepository.count();
-        assertThat(count).isGreaterThan(0);
+        assertThat(count).isEqualTo(0);
     }
 
     @Commit
@@ -41,7 +43,7 @@ public class DemoApplicationTests {
     @Test
     void testRollback(){
         long count=bookRepository.count();
-        assertThat(count).isGreaterThan(2);
+        assertThat(count).isEqualTo(1);
     }
 
 }

@@ -1,0 +1,18 @@
+hibernate ddl schema generation tool:
+hibernate schema generation tool-aka-hbm2ddl.auto configuration property
+hibernate has the ability to reflect on JPA annotated classes to determine necessary database structure
+hibernate can:
+    create ddl statements to file
+    execute ddl statements to create or update database tables
+springboot is autoconfiguring this property to automatically generate database tables
+
+HBM DDL Auto properties
+none:disables schema generation tool
+create-only:create database schema from JPA entities
+drop:drops database tables related to JPA entities
+create:drop database schema and re-creates from JPA entities
+create-drop: drops database schema,recreates from JPA entities and drops down again on shutdown
+validate:validates schema,fatal error if wrong
+update:updates schema from JPA entities
+
+for production databases, use validate or none
