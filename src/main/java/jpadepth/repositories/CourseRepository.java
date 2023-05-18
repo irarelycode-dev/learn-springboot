@@ -34,4 +34,29 @@ public class CourseRepository {
         return course;
     }
 
+    //since this is transactional, all the lines inside this method are updated
+    public void playWithEntityManager() {
+        Course course1 = new Course("Webservices in 100 steps");
+        em.persist(course1);
+        em.flush();
+        course1.setName("Webservices in 100 steps-Updated");
+        em.flush();
+
+        Course course2 = new Course("Angularjs in 100 steps");
+        em.persist(course2);
+        em.flush();
+
+        em.detach(course2);
+        //instead of detaching with individual objects, you can use em.clear()
+        course2.setName("Angularjs in 100 steps-Updated");
+        em.flush();
+
+
+        Course course3 = new Course("GraphQL in 100 steps");
+        em.persist(course3);
+        course3.setName("GraphQL in 100 steps-Updated");
+        em.refresh(course3);
+
+    }
+
 }

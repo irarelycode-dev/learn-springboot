@@ -15,6 +15,4 @@
 
 
 --jpa in depth
-INSERT INTO COURSE VALUES (6001, 'JPA in 50 steps');
-insert into course(id,name) values(2001,'Hibernate in 50 steps');
-insert into course(id,name) values(3100,'Springboot in 10 steps');
+select * from Course;

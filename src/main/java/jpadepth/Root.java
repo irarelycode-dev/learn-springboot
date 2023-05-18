@@ -30,6 +30,9 @@ public class Root implements CommandLineRunner {
         Course newCourse = courseRepo.save(new Course("Microservices in 10 steps"));
         logger.info("new course inserted: " + newCourse);
 
+        //play with entity manager
+        courseRepo.playWithEntityManager();
+
     }
 
     public static void main(String[] args) {

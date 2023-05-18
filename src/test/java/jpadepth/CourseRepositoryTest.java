@@ -48,4 +48,10 @@ public class CourseRepositoryTest {
 
     }
 
+    @Test
+    @DirtiesContext
+    public void playWithEntityManager() {
+        courseRepo.playWithEntityManager();
+    }
+
 }
