@@ -1,9 +1,8 @@
 package jpadepth;
 
-import jpadepth.entity.Course;
-import jpadepth.entity.Review;
-import jpadepth.entity.Student;
+import jpadepth.entity.*;
 import jpadepth.repositories.CourseRepository;
+import jpadepth.repositories.EmployeeRepository;
 import jpadepth.repositories.StudentRepository;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -12,6 +11,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +23,9 @@ public class Root implements CommandLineRunner {
 
     @Autowired
     StudentRepository studentRepo;
+
+    @Autowired
+    EmployeeRepository employeeRepo;
 
     private final Logger logger = LoggerFactory.getLogger(Root.class);
 
@@ -48,6 +51,11 @@ public class Root implements CommandLineRunner {
         reviews.add(new Review("5.0", "All set to be perfect"));
         courseRepo.addReviewForCourse(10003L, reviews);
         studentRepo.insertStudentAndCourse(new Student("Jack"), new Course("Microservices in golang"));
+
+        //inheritance
+        employeeRepo.insert(new FullTimeEmployee("Jill", new BigDecimal("50")));
+        employeeRepo.insert(new FullTimeEmployee("Joe", new BigDecimal("34")));
+        List<Employee> employees = employeeRepo.retrieveFullTimeEmployees();
 
     }
 
