@@ -2,6 +2,7 @@ package jpadepth.repositories;
 
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
+import jpadepth.entity.Course;
 import jpadepth.entity.Passport;
 import jpadepth.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,14 @@ public class StudentRepository {
         student.setPassport(passport);
         em.persist(student);
         return student;
+    }
+
+    public void insertStudentAndCourse(Student student,Course course) {
+        em.persist(student);
+        em.persist(course);
+        student.setCourse(course);
+        course.setStudent(student);
+        em.persist(student);
     }
 
 }

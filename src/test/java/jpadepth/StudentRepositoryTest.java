@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 @SpringBootTest(classes = Root.class)
 public class StudentRepositoryTest {
 
@@ -37,6 +39,13 @@ public class StudentRepositoryTest {
         Passport passport = student.getPassport();
         passport.setNumber("L001EDM");
         student.setName("Ranga-updated");
+    }
+
+    @Test
+    @Transactional
+    public void retrieveStudentAndCourses() {
+        Student student = em.find(Student.class, 20001L);
+        assertNotEquals(student.getCourses().size(), 0);
     }
 
 }

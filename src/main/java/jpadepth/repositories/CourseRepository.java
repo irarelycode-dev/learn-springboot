@@ -4,8 +4,13 @@ package jpadepth.repositories;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import jpadepth.entity.Course;
+import jpadepth.entity.Review;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 @Transactional
@@ -13,6 +18,8 @@ public class CourseRepository {
 
     @Autowired
     EntityManager em;
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public Course findById(Long id) {
         return em.find(Course.class, id);
@@ -57,6 +64,15 @@ public class CourseRepository {
         course3.setName("GraphQL in 100 steps-Updated");
         em.refresh(course3);
 
+    }
+
+    public void addReviewForCourse(Long courseId, List<Review> reviews) {
+        Course course = findById(courseId);
+        for (Review review : reviews) {
+            course.addReview(review);
+            review.setCourse(course);
+            em.persist(review);
+        }
     }
 
 }
