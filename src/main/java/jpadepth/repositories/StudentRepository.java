@@ -8,6 +8,8 @@ import jpadepth.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Transactional
 public class StudentRepository {
@@ -33,12 +35,20 @@ public class StudentRepository {
         return student;
     }
 
-    public void insertStudentAndCourse(Student student,Course course) {
+    public void insertStudentAndCourse(Student student, Course course) {
         em.persist(student);
         em.persist(course);
         student.setCourse(course);
         course.setStudent(student);
-        em.persist(student);
+//        em.persist(student);
+    }
+
+    public List<Course> getStudentCourses(Long id) {
+        Student student = findById(id);
+        if (student != null) {
+            return student.getCourses();
+        }
+        return null;
     }
 
 }

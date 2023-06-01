@@ -26,7 +26,7 @@ public class Course {
     @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
     private List<Review> reviews = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "courses")//mappedBy is required to create only one join table. This is the owning side
+    @ManyToMany(mappedBy = "courses")
     private List<Student> students = new ArrayList<>();
 
     public Course() {
