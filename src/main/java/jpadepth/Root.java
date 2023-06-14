@@ -7,15 +7,15 @@ import jpadepth.entity.manytomany.courses.ConcordiaCourseRating;
 import jpadepth.entity.manytomany.courses.ConcordiaCourseRatingKey;
 import jpadepth.entity.manytomany.courses.ConcordiaStudent;
 import jpadepth.entity.manytomany.employees.EmployeePkId;
+import jpadepth.entity.manytomany.mentors.Graduates;
+import jpadepth.entity.manytomany.mentors.Mentors;
 import jpadepth.entity.manytomany.songs.Song;
 import jpadepth.entity.manytomany.songs.SongId;
 import jpadepth.repositories.CourseRepository;
 import jpadepth.repositories.EmployeeRepository;
 import jpadepth.repositories.StudentRepository;
 import jpadepth.repositories.manytomany.*;
-import jpadepth.services.ConcordiaCourseRatingService;
-import jpadepth.services.ConcordiaCourseService;
-import jpadepth.services.ConcordiaStudentService;
+import jpadepth.services.*;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,6 +62,12 @@ public class Root implements CommandLineRunner {
 
     @Autowired
     ConcordiaCourseRatingService cCourseRatingService;
+
+    @Autowired
+    GraduateService graduateService;
+
+    @Autowired
+    MentorService mentorService;
 
     private final Logger logger = LoggerFactory.getLogger(Root.class);
 
@@ -134,6 +140,15 @@ public class Root implements CommandLineRunner {
         tmpC.addRatings(rating);
 
         System.out.println("student's rating:" + student + student.getRatings().size());
+
+
+        //many-to-many
+        //graduates and mentors
+        List<Graduates> graduates = graduateService.getGraduates();
+        System.out.println("graduates length:" + graduates.size());
+        List<Mentors> mentors = mentorService.getAllMentors();
+        System.out.println("mentors length:" + mentors.size());
+
 
     }
 
